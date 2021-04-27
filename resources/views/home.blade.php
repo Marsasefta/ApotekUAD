@@ -1,23 +1,124 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<div class="row">
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
 
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+    </div>
+
+    <div class="col">
+        <figure class="figure">
+            <img src="https://www.temposcangroup.com/files/product/bodrex-extra-rev.jpg" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
     </div>
 </div>
 @endsection
