@@ -20,6 +20,7 @@ class CreateObatsTable extends Migration
             $table->string('kategori');
             $table->integer('harga');
             $table->integer('stok');
+            $table->string('foto');
             $table->timestamps();
         });
     }

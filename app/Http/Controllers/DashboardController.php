@@ -14,14 +14,10 @@ class DashboardController extends Controller
         return view('admin.index', compact('obat'));
     }
 
-    public function create()
-    {
-        //
-    }
-
     public function store(Request $request)
     {
-        //
+        Obat::create($request->all());
+        return redirect()->route('home');
     }
 
     public function show($id)

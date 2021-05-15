@@ -23,3 +23,4 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('home');
+Route::post('/dashboard', [DashboardController::class, 'store'])->name('add-obat');
