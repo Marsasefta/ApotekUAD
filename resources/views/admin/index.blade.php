@@ -2,8 +2,8 @@
 @section('content')
 <div class="container-fluid p-5" style="background-color: white; margin-bottom: 10rem">
       <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-3" style="max-width: 540px;">
+        <div class="col-md-3">
+          <div class="card border-bottom-primary border-bottom-5 mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="..." alt="...">
@@ -17,8 +17,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-3" style="max-width: 540px;">
+        <div class="col-md-3">
+          <div class="card border-bottom-danger border-bottom-5 mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="..." alt="...">
@@ -32,16 +32,31 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-3" style="max-width: 540px;">
+        <div class="col-md-3">
+          <div class="card border-bottom-warning border-bottom-5 mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="..." alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Stok Obat</h5>
-                  <h1 class="fw-bold">50</h1>
+                  <h5 class="card-title">Obat Kuning</h5>
+                  <h1 class="fw-bold">{{App\Models\Obat::get(['kategori'])->where('kategori', 'obat kuning')->count()}}</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-bottom-success border-bottom-5 mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Obat Hijau</h5>
+                  <h1 class="fw-bold">{{App\Models\Obat::get(['kategori'])->where('kategori', 'obat hijau')->count()}}</h1>
                 </div>
               </div>
             </div>
