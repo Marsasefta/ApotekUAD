@@ -1,6 +1,53 @@
 @extends('layouts.dashboard')
 @section('content')
 <div class="container-fluid p-5" style="background-color: white; margin-bottom: 10rem">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Stok Obat</h5>
+                  <h1 class="fw-bold">{{$obat->count()}}</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Obat Merah</h5>
+                  <h1 class="fw-bold">{{App\Models\Obat::get(['kategori'])->where('kategori', 'obat merah')->count()}}</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Stok Obat</h5>
+                  <h1 class="fw-bold">50</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <button type="button" class="btn btn-primary mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Tambah obat
       </button>
