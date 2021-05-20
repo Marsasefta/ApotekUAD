@@ -17,7 +17,7 @@ class DashboardController extends Controller
     public function store(Request $request)
     {
         Obat::create($request->all());
-        return redirect()->route('home');
+        return redirect()->route('dashboard');
     }
 
     public function show($id)
@@ -37,6 +37,8 @@ class DashboardController extends Controller
 
     public function destroy($id)
     {
-        //
+        $obat = Obat::findOrFail($id);
+        $obat->delete();
+        return redirect()->route('dashboard');
     }
 }

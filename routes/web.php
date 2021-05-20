@@ -22,5 +22,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('home');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::post('/dashboard', [DashboardController::class, 'store'])->name('add-obat');
+Route::delete('/dashboard/{id}', [DashboardController::class, 'destroy'])->name('delete-obat');

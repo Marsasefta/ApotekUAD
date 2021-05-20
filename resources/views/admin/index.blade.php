@@ -57,6 +57,7 @@
                 <th>Harga Obat</th>
                 <th>Stok Obat</th>
                 <th>Foto Obat</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -69,6 +70,20 @@
                 <td>{{$dataObat->harga}}</td>
                 <td>{{$dataObat->stok}}</td>
                 <td><img src="{{$dataObat->foto}}" alt="" width="100px"></td>
+                <td>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <button class="btn btn-warning btn-block text-white"><i class="bi bi-pen-fill"></i></button>
+                    </div>
+                    <div class="col-sm-6">
+                     <form action="{{ route('delete-obat', ['id'=>$dataObat->id]) }}" method="post">
+                      @csrf
+                      @method('delete')
+                        <button class="btn btn-danger btn-block text-white" onclick="return confirm('Anda yakin akan menghapus data ini?')"><i class="bi bi-trash-fill"></i></button>
+                     </form>
+                    </div>
+                  </div>
+                </td>
             </tr>
             @empty
                 <h1>Belum ada data</h1>
