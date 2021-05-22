@@ -38,18 +38,57 @@
 {{-- Bagian Obat --}}
 <section id="bagian-obat">
     <div class="container-fluid mt-5">
+      {{-- Obat Merah --}}
+      <h3>Obat Merah</h3>
         <div class="row justify-content-center text-dark">
-            @foreach ($obat as $dataObat)
+            @foreach ($obat->take(6) as $dataObat)
             <div class="col-md-2">
-                <figure class="figure border">
-                    <img src="{{$dataObat->foto}}" class="figure-img img-fluid rounded" alt="...">
-                    <h5>{{$dataObat->nama}}</h5>
-                    <h5 class="fw-bold">{{$dataObat->harga}}</h5>
-                    <span class="badge bg-danger p-1">{{$dataObat->kategori}}</span>
+                <figure class="figure border rounded">
+                    <img src="{{$dataObat->foto}}" class="figure-img img-fluid" alt="...">
+                    <div class="p-3">
+                      <h5>{{$dataObat->nama}}</h5>
+                      <h5 class="fw-bold">{{$dataObat->harga}}</h5>
+                      <span class="badge bg-danger p-1">{{$dataObat->kategori}}</span>
+                    </div>
                 </figure>
             </div>
             @endforeach
         </div>
+        {{-- Akhir Obat Merah --}}
+        {{-- Obat Biru --}}
+        <h3>Obat Biru</h3>
+          <div class="row justify-content-center text-dark">
+              @foreach ($obat->take(6) as $dataObat)
+              <div class="col-md-2">
+                  <figure class="figure border rounded">
+                      <img src="{{$dataObat->foto}}" class="figure-img img-fluid" alt="...">
+                      <div class="p-3">
+                        <h5>{{$dataObat->nama}}</h5>
+                        <h5 class="fw-bold">{{$dataObat->harga}}</h5>
+                        <span class="badge bg-danger p-1">{{$dataObat->kategori}}</span>
+                      </div>
+                  </figure>
+              </div>
+              @endforeach
+          </div>
+          {{-- Akhir Obat Biru --}}
+        {{-- Obat Hijau --}}
+        <h3>Obat Hijau</h3>
+          <div class="row justify-content-center text-dark">
+              @foreach ($obat->take(6) as $dataObat)
+              <div class="col-md-2">
+                  <figure class="figure border rounded">
+                      <img src="{{$dataObat->foto}}" class="figure-img img-fluid" alt="...">
+                      <div class="p-3">
+                        <h5>{{$dataObat->nama}}</h5>
+                        <h5 class="fw-bold">{{$dataObat->harga}}</h5>
+                        <span class="badge bg-danger p-1">{{$dataObat->kategori}}</span>
+                      </div>
+                  </figure>
+              </div>
+              @endforeach
+          </div>
+          {{-- Akhir Obat Hijau --}}
     </div>
 </section>
 {{-- Akhir Bagian Obat --}}
