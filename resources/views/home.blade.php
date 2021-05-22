@@ -35,4 +35,23 @@
 </section>
 {{-- Akhir BAgian Banner --}}
 
+{{-- Bagian Obat --}}
+<section id="bagian-obat">
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center text-dark">
+            @foreach ($obat as $dataObat)
+            <div class="col-md-2">
+                <figure class="figure border">
+                    <img src="{{$dataObat->foto}}" class="figure-img img-fluid rounded" alt="...">
+                    <h5>{{$dataObat->nama}}</h5>
+                    <h5 class="fw-bold">{{$dataObat->harga}}</h5>
+                    <span class="badge bg-danger p-1">{{$dataObat->kategori}}</span>
+                </figure>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+{{-- Akhir Bagian Obat --}}
+
 @endsection
