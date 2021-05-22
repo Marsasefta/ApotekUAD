@@ -1,5 +1,19 @@
-*{
-   font-family: 'Poppins', sans-serif;
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.container-fluid {
+    width: 80%;
+}
+
+.carousel-inner {
+    height: 30rem;
+    object-fit: cover;
+}
+
+.carousel-inner img {
+    height: 30rem;
+    object-fit: cover;
 }
 
 .navbar-toggler:focus,
