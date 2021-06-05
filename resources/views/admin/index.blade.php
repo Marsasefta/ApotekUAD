@@ -107,7 +107,6 @@
             <tr>
                 <th>No.</th>
                 <th>Nama Obat</th>
-                <th>Deskripsi Obat</th>
                 <th>Kategori Obat</th>
                 <th>Harga Obat</th>
                 <th>Stok Obat</th>
@@ -120,7 +119,6 @@
             <tr>
                 <td>{{$loop->iteration}}</td>
                 <td>{{$dataObat->nama}}</td>
-                <td>{{$dataObat->deskripsi}}</td>
                 <td>{{$dataObat->kategori}}</td>
                 <td>{{$dataObat->harga}}</td>
                 <td>{{$dataObat->stok}}</td>
