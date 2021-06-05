@@ -42,7 +42,7 @@
         <div class="row justify-content-center text-dark">
             @foreach ($obat->take(6) as $dataObat)
             <div class="col-md-4 col-lg-2">
-                <figure class="figure border rounded">
+                <figure class="figure border rounded shadow-sm">
                     <img src="{{$dataObat->foto}}" class="figure-img img-fluid" alt="...">
                     <div class="p-3">
                       <div>
