@@ -28,5 +28,5 @@ Route::middleware('admin')
         Route::delete('/dashboard/{id}', [DashboardController::class, 'destroy'])->name('delete-obat');
     });
 
+Route::get('/beli/{id}', [HomeController::class, 'detail'])->name('detail_obat');
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/detail/{id}', [HomeController::class, 'detail'])->name('detail_obat');
