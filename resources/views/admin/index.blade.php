@@ -91,7 +91,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="foto" class="form-label">Foto Produk</label>
-                  <input class="form-control" id="foto" name="foto">
+                  <input class="form-control" id="foto" name="foto" type="file" multiple>
                 </div>
               </div>
               <div class="modal-footer">
