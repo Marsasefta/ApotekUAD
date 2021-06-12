@@ -119,5 +119,77 @@
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
         </script>
     </body>
+    <!-- Footer -->
+<footer class="text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>APOTEK UAD
+            </h6>
+            <p>
+              Apotek UAD adalah apotek yang menyediakan obat-obatan yang lengkap dan murah
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Obat-Obatan</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Multivitamin</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Susu anak & Lansia</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
 
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i> Jalan Gajah Mada No 4 Gondokusuman , Yogyakarta </p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              apotekuad@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 08325235341234</p>
+            <p><i class="fas fa-print me-3"></i> 12353465675434</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        Build With Love by Group 2B PKW 2021
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </html>
