@@ -3,7 +3,7 @@
 <div class="container-fluid p-5" style="background-color: white; margin-bottom: 10rem">
       <div class="row">
         <div class="col-md-3">
-          <div class="card border-bottom-primary border-bottom-5 mb-3" style="max-width: 540px;">
+          <div class="card border-bottom-secondary border-bottom-5 mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="card-body">
@@ -27,11 +27,11 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card border-bottom-warning border-bottom-5 mb-3" style="max-width: 540px;">
+          <div class="card border-bottom-primary border-bottom-5 mb-3" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Obat Kuning</h5>
+                  <h5 class="card-title">Obat Biru</h5>
                   <h1 class="fw-bold">{{App\Models\Obat::get(['kategori'])->where('kategori', 'Obat Kuning')->count()}}</h1>
                 </div>
               </div>
@@ -108,7 +108,7 @@
                 <th>No.</th>
                 <th>Nama Obat</th>
                 <th>Kategori Obat</th>
-                <th>Harga Obat</th>
+                <th>Harga Obat (Rp)</th>
                 <th>Stok Obat</th>
                 <th>Foto Obat</th>
                 <th>Aksi</th>
@@ -120,7 +120,7 @@
                 <td>{{$loop->iteration}}</td>
                 <td>{{$dataObat->nama}}</td>
                 <td>{{$dataObat->kategori}}</td>
-                <td>{{$dataObat->harga}}</td>
+                <td>{{number_format($dataObat->harga)}}</td>
                 <td>{{$dataObat->stok}}</td>
                 <td><img src="{{$dataObat->foto}}" alt="" width="100px"></td>
                 <td>
