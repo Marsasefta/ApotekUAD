@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// Bisa diakses admin
 Route::middleware('admin')
     ->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -28,5 +29,6 @@ Route::middleware('admin')
         Route::delete('/dashboard/{id}', [DashboardController::class, 'destroy'])->name('delete-obat');
     });
 
+// Bisa diakses user
 Route::get('/beli/{id}', [HomeController::class, 'detail'])->name('detail_obat');
 Route::get('/', [HomeController::class, 'index'])->name('home');
