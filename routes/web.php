@@ -26,6 +26,7 @@ Route::middleware('admin')
     ->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::post('/dashboard', [DashboardController::class, 'store'])->name('add-obat');
+        Route::put('/dashboard/{id}/edit', [DashboardController::class, 'update'])->name('edit-obat');
         Route::delete('/dashboard/{id}', [DashboardController::class, 'destroy'])->name('delete-obat');
     });
 
