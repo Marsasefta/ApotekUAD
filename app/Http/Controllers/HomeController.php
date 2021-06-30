@@ -7,9 +7,12 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $obat = Obat::all();
+        $obat = Obat::when($request->keyword, function ($query) use ($request) {
+            $query->where('nama', 'like', "%{$request->keyword}%")
+                ->orWhere('kategori', 'like', "%{$request->keyword}%");
+        })->paginate(5);
         return view('home', compact('obat'));
     }
 

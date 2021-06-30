@@ -2,10 +2,11 @@
 
 @section('content')
 
+
 {{-- Bagian Banner --}}
 <section id="banner">
-    <div class="container-fluid">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -38,6 +39,18 @@
 {{-- Bagian Obat --}}
 <section id="bagian-obat">
     <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-4">
+          <div class="my-5">
+            <form class="noprint" action="{{ url()->current() }}">
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Cari Data" name="keyword">
+                  <button id="btnsearch" class="btn btn-primary" type="submit">Search</button>
+              </div>
+           </form>
+          </div>
+        </div>
+      </div>
       <h3>Obat Merah</h3>
         <div class="row justify-content-center text-dark">
             @foreach ($obat->take(6) as $dataObat)
@@ -46,7 +59,7 @@
                     <img src="{{ Storage::url('public/obat/').$dataObat->foto }}" class="figure-img img-fluid" alt="...">
                     <div class="p-3">
                       <div>
-                        <h5>{{$dataObat->nama}}</h5>
+                        <p>{{$dataObat->nama}}</p>
                         <h5 class="fw-bold">Rp. {{number_format($dataObat->harga)}}, 00</h5>
                         <span class="badge bg-danger p-1">{{$dataObat->kategori}}</span>
                       </div>
