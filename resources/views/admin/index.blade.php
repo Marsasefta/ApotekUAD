@@ -1,6 +1,11 @@
 @extends('layouts.dashboard')
 @section('content')
 <div class="container-fluid p-5" style="background-color: white; margin-bottom: 10rem">
+  @if (session()->has('success'))
+  <div class="alert alert-success" role="alert">
+    {{ Session::get('success') }}
+  </div>
+  @endif
       <div class="row">
         <div class="col-md-3">
           <div class="card border-bottom-secondary border-bottom-5 mb-3" style="max-width: 540px;">
@@ -75,7 +80,7 @@
                 <td>{{$dataObat->kategori}}</td>
                 <td>{{number_format($dataObat->harga)}}</td>
                 <td>{{$dataObat->stok}}</td>
-                <td><img src="{{$dataObat->foto}}" alt="" width="100px"></td>
+                <td><img src="{{ Storage::url('public/obat/').$dataObat->foto }}" width="100px"></td>
                 <td>
                   <div class="row">
                     <div class="col-sm-6">

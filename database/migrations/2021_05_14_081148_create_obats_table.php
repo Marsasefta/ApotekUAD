@@ -16,6 +16,7 @@ class CreateObatsTable extends Migration
         Schema::create('obats', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('slug');
             $table->text('deskripsi');
             $table->string('kategori');
             $table->integer('harga');

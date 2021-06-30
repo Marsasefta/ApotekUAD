@@ -43,14 +43,14 @@
             @foreach ($obat->take(6) as $dataObat)
             <div class="col-md-4 col-lg-2">
                 <figure class="figure border rounded shadow-sm">
-                    <img src="{{$dataObat->foto}}" class="figure-img img-fluid" alt="...">
+                    <img src="{{ Storage::url('public/obat/').$dataObat->foto }}" class="figure-img img-fluid" alt="...">
                     <div class="p-3">
                       <div>
                         <h5>{{$dataObat->nama}}</h5>
                         <h5 class="fw-bold">Rp. {{number_format($dataObat->harga)}}, 00</h5>
                         <span class="badge bg-danger p-1">{{$dataObat->kategori}}</span>
                       </div>
-                      <a href="{{ route('detail_obat', $dataObat->id) }}" class="btn btn-primary mt-3">Beli Sekarang</a>
+                      <a href="{{ route('detail_obat', $dataObat->slug) }}" class="btn btn-primary mt-3">Beli Sekarang</a>
                     </div>
                 </figure>
             </div>

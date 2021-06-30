@@ -13,9 +13,9 @@ class HomeController extends Controller
         return view('home', compact('obat'));
     }
 
-    public function detail($id)
+    public function detail($slug)
     {
-        $obatKategori = Obat::findOrFail($id);
+        $obatKategori = Obat::where('slug', $slug)->first();
         $obat = Obat::all();
         return view('detail_obat', compact('obat', 'obatKategori'));
     }

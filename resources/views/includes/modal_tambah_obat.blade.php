@@ -5,7 +5,7 @@
           <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action="{{ route('add-obat') }}" method="post">
+        <form action="{{ route('add-obat') }}" method="post" enctype="multipart/form-data">
           @csrf
           <div class="modal-body">
             <div class="mb-3">
@@ -35,7 +35,7 @@
             </div>
             <div class="mb-3">
               <label for="foto" class="form-label">Foto Produk</label>
-              <input class="form-control" id="foto" name="foto" type="file" multiple>
+              <input class="form-control" id="foto" name="foto" type="file">
             </div>
           </div>
           <div class="modal-footer">

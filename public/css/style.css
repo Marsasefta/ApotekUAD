@@ -23,7 +23,7 @@
     box-shadow: none;
 }
 
-figure:hover {
+.figure:hover {
     margin-bottom: 10px;
     margin-top: -10px;
     cursor: pointer;

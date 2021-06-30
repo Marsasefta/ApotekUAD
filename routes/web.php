@@ -31,5 +31,5 @@ Route::middleware('admin')
     });
 
 // Bisa diakses user
-Route::get('/beli/{id}', [HomeController::class, 'detail'])->name('detail_obat');
+Route::get('/beli/{slug}', [HomeController::class, 'detail'])->name('detail_obat');
 Route::get('/', [HomeController::class, 'index'])->name('home');
